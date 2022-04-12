@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="341.0" prefWidth="526.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_new.Client.SignController">
+   <children>
+      <VBox layoutX="110.0" layoutY="21.0" prefHeight="238.0" prefWidth="402.0" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <Label minHeight="40.0" prefHeight="40.0" prefWidth="402.0" text="SingIn" textFill="#948b8b">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <TextArea minHeight="50.0" prefHeight="50.0" prefWidth="402.0" promptText="login..." />
+            <Pane minHeight="40.0" prefHeight="40.0" prefWidth="402.0" />
+            <PasswordField minHeight="50.0" prefHeight="50.0" promptText="pass..." />
+            <Pane minHeight="25.0" prefHeight="25.0" prefWidth="402.0" />
+            <HBox prefHeight="56.0" prefWidth="402.0">
+               <children>
+                  <Button minHeight="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="189.0" text="Register" />
+                  <Pane minHeight="50.0" prefHeight="50.0" prefWidth="127.0" />
+                  <Button minHeight="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="104.0" text="Sing" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
