@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="540.0" prefWidth="680.0" spacing="5.0" style="-fx-background-color: gold;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_new.Client.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <ToolBar fx:id="toolBar" prefHeight="40.0" prefWidth="326.0" style="-fx-background-color: red;">
+        <items>
+            <Label prefHeight="39.0" prefWidth="356.0" text="300Gram">
+               <font>
+                  <Font name="Lucida Calligraphy Italic" size="36.0" />
+               </font>
+               <textFill>
+                  <LinearGradient cycleMethod="REPEAT" endX="0.2985781990521327" endY="0.7725118483412322" startX="0.12322274881516589" startY="0.018957345971563982">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.42528735632183906">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.44736841320991516" green="0.36452242732048035" blue="0.36452242732048035" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+          <Button fx:id="toolBarButton1" mnemonicParsing="false" onAction="#onHelloButtonClick" prefWidth="50.0" text="Button" />
+            <Button mnemonicParsing="false" prefWidth="50.0" text="Button" />
+            <Button mnemonicParsing="false" prefWidth="50.0" text="Button" />
+            <Button mnemonicParsing="false" prefWidth="50.0" text="addContact" />
+            <Button fx:id="exit" mnemonicParsing="false" onAction="#exitButtonAction" prefWidth="50.0" text="Exit" />
+        </items>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow height="56.17" radius="25.387500000000003" spread="0.08" width="47.38">
+               <color>
+                  <Color red="0.2914908528327942" green="0.07020000368356705" blue="0.38999998569488525" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ToolBar>
+      <HBox alignment="CENTER" prefHeight="389.0" prefWidth="637.0">
+         <children>
+            <VBox prefHeight="389.0" prefWidth="565.0">
+               <children>
+                  <Label fx:id="userLabel" minHeight="30.0" prefHeight="40.0" prefWidth="503.0" text="User..." />
+                  <ScrollPane fx:id="scrollPaneMessageBox" hbarPolicy="NEVER" prefHeight="350.0" prefWidth="500.0" style="-fx-background-color: gray;">
+                     <content>
+                        <VBox fx:id="messegeBox" prefHeight="349.0" prefWidth="484.0" spacing="10.0" style="-fx-background-color: gray;" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+            <ScrollPane hbarPolicy="NEVER" minWidth="140.0" prefHeight="200.0" prefWidth="140.0" style="-fx-background-color: gold;">
+               <content>
+                  <VBox fx:id="userBox" minWidth="130.0" prefHeight="388.0" prefWidth="140.0" style="-fx-background-color: gold;">
+                     <children>
+                        <Label minHeight="30.0" minWidth="130.0" prefHeight="30.0" prefWidth="130.0" text="Список контакотв" />
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+         <opaqueInsets>
+            <Insets top="20.0" />
+         </opaqueInsets>
+      </HBox>
+      <HBox prefHeight="36.0" prefWidth="640.0">
+         <children>
+            <TextField fx:id="clientMessageArea" prefHeight="41.0" prefWidth="504.0" />
+            <Button fx:id="sendMessage" minWidth="140.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: red;" text="Send">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+               <textFill>
+                  <LinearGradient cycleMethod="REPEAT" endX="0.2985781990521327" endY="0.7725118483412322" startX="0.12322274881516589" startY="0.5355450236966824">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007662835249042145">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.3947368562221527" green="0.3344298303127289" blue="0.3344298303127289" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill></Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
